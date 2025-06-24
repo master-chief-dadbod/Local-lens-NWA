@@ -2,3 +2,20 @@
 node_modules/
 npm-debug.log
 yarn-error.log
+# Log files
+*.log
+
+# Operating System specific files to ignore (Windows, macOS)
+.DS_Store
+Thumbs.db
+
+# IDE specific files (e.g., Visual Studio Code)
+.vscode/
+.idea/
+
+# Database backups (if you create any locally)
+*.sql
+*.bak
+
+# Other temporary files
+*.tmp
