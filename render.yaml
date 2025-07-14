@@ -1,0 +1,12 @@
+# Exported from Render on 2025-07-14T20:34:31Z
+services:
+- type: web
+  name: Local-lens-NWA
+  runtime: node
+  repo: https://github.com/master-chief-dadbod/Local-lens-NWA
+  plan: free
+  region: oregon
+  buildCommand: yarn
+  startCommand: yarn start
+  autoDeployTrigger: commit
+version: "1"
