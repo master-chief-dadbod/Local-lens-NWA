@@ -4,6 +4,14 @@ This repository contains a prototype web interface for the Local Lens project in
 
 ## Running Locally
 Open `index.html` in your browser to explore the demo experience.
+Open `index.html` directly or run the small Node server to explore the demo experience.
+To start the server:
+
+```bash
+npm install
+npm start
+```
+The site will be available at `http://localhost:3000`.
 
 ### AR Simulation
 Launch `public/ar-test.html` to try the camera-based overlay demo. Click **Start AR Mode** to grant camera permission and collect on-screen badges.
