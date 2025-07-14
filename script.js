@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggleGameModeBtn) {
         toggleGameModeBtn.addEventListener('click', () => {
-            isGameModeOn =!isGameModeOn; // Toggle the state
+            isGameModeOn = !isGameModeOn; // Toggle the state
             if (isGameModeOn) {
                 toggleGameModeBtn.innerHTML = 'Game Mode: ON <span class="material-icons">toggle_on</span>';
                 toggleGameModeBtn.style.backgroundColor = '#ffc107'; // Yellow
@@ -23,19 +23,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Placeholder for interactive map initialization (e.g., Leaflet, Mapbox GL JS)
-    // const mapElement = document.getElementById('map-container');
-    // if (mapElement) {
-    //     // Initialize map library here
-    //     console.log('Map container found. Map initialization logic would go here.');
-    // }
+    // Placeholder for interactive map initialization (future)
+    // ...
 
-    // Placeholder for dynamic event loading
+    // Basic dynamic event loading for demo purposes
+    const extraEvents = [
+        {
+            img: 'https://via.placeholder.com/400x250/ff5722/ffffff?text=Art+Walk',
+            title: 'Downtown Art Walk',
+            date: 'September 10, 2025',
+            location: 'Springdale Arts District',
+            description: 'Tour local galleries with guided commentary.'
+        },
+        // Additional events omitted for brevity...
+    ];
+
     const loadMoreBtn = document.querySelector('.btn-load-more');
-    if (loadMoreBtn) {
+    const eventGrid = document.querySelector('.event-grid');
+    if (loadMoreBtn && eventGrid) {
         loadMoreBtn.addEventListener('click', () => {
-            console.log('Loading more events...');
-            // Add logic to fetch and append more event cards (future sprint)
+            extraEvents.forEach(evt => {
+                const card = document.createElement('div');
+                card.className = 'event-card';
+                card.innerHTML = `
+                    <img src="${evt.img}" alt="Event Image">
+                    <div class="card-content">
+                        <h3>${evt.title}</h3>
+                        <p class="event-date"><span class="material-icons">calendar_today</span> ${evt.date}</p>
+                        <p class="event-location"><span class="material-icons">location_on</span> ${evt.location}</p>
+                        <p class="event-description">${evt.description}</p>
+                        <a href="#" class="btn btn-link">View Details <span class="material-icons">chevron_right</span></a>
+                    </div>`;
+                eventGrid.appendChild(card);
+            });
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.textContent = 'No More Events';
         });
     }
 
