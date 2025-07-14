@@ -5,10 +5,15 @@ This repository contains a prototype web interface for the Local Lens project in
 ## Running Locally
 Open `index.html` in your browser to explore the demo experience.
 
+### AR Simulation
+Launch `public/ar-test.html` to try the camera-based overlay demo. Click **Start AR Mode** to grant camera permission and collect on-screen badges.
+
 ## Project Structure
 - `index.html` – main HTML page for the prototype
 - `style.css` – layout and theme styling
 - `script.js` – lightweight JavaScript adding interactivity, such as the game mode toggle and dynamic event loading
+- `public/ar-test.html` – AR simulation page using the camera
+- `public/ar-sim.js` – client-side logic for the AR demo
 
 ## Manual Deployment
 If automated pushes are unavailable, you can upload these files directly to GitHub or another hosting service.
