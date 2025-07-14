@@ -109,6 +109,7 @@ box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
 
 .btn-accent:hover {
 background-color: darken(var(--accent-color), 10%);
+background-color: #1e7e34;
 transform: translateY(-2px);
 box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4);
 text-decoration: none;
@@ -122,6 +123,7 @@ box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3);
 
 .btn-secondary:hover {
 background-color: darken(var(--secondary-color), 10%);
+background-color: #8194ac;
 transform: translateY(-2px);
 box-shadow: 0 6px 15px rgba(108, 117, 125, 0.4);
 text-decoration: none;
@@ -147,7 +149,6 @@ padding: 0;
 text-decoration: none;
 font-weight: 600;
 }
-
 .btn-link-light:hover {
 text-decoration: underline;
 color: #00e0ff;
@@ -516,6 +517,7 @@ box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
 
 .btn-toggle-game-mode:hover {
 background-color: darken(#ffc107, 10%);
+background-color: #d39e00;
 box-shadow: 0 6px 15px rgba(255, 193, 7, 0.4);
 }
 
