@@ -399,6 +399,7 @@ text-decoration: none;
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-header.container { /* Corrected selector */
+  .main-header .container { /* Corrected selector */
         flex-direction: column;
     }
 
