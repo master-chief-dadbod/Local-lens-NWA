@@ -3,7 +3,6 @@
 This repository contains a prototype web interface for the Local Lens project in Northwest Arkansas. The site is built with simple HTML, CSS and JavaScript.
 
 ## Running Locally
-Open `index.html` in your browser to explore the demo experience.
 Open `index.html` directly or run the small Node server to explore the demo experience.
 To start the server:
 
@@ -30,7 +29,7 @@ If automated pushes are unavailable, you can upload these files directly to GitH
 ## Node Deployment
 This project is static, but some hosting platforms like Render expect a package.json to run. The included `server.js` uses Express to serve the files.
 
-Run `npm install`.
+1. Run `npm install`.
 2. Start with `npm start`.
 3. On Render, set the build command to `npm install` and the start command to `npm start`.
 
