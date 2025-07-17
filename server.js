@@ -4,7 +4,6 @@ const path = require('path');
 const app = express();
 const { Pool } = require('pg');
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 
 // PostgreSQL connection pool using DATABASE_URL from .env
