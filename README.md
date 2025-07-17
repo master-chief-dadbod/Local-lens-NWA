@@ -36,4 +36,8 @@ Run `npm install`.
 
 ## Environment Variables
 
-The Express server expects a `DATABASE_URL` variable pointing to a PostgreSQL instance.  Set this in a `.env` file or your host environment before starting the server.
+The Express server expects a `DATABASE_URL` variable pointing to a PostgreSQL instance.
+
+1. Copy `.env.example` to `.env`.
+2. Edit `.env` and provide the connection string for `DATABASE_URL`.
+3. Start the server with `npm start` or through your hosting provider.
