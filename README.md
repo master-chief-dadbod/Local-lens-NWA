@@ -33,3 +33,7 @@ This project is static, but some hosting platforms like Render expect a package.
 1. Run `yarn install` (or `npm install`).
 2. Start with `yarn start` or `npm start`.
 3. On Render, set the build command to `yarn` and the start command to `yarn start`.
+
+## Environment Variables
+
+The Express server expects a `DATABASE_URL` variable pointing to a PostgreSQL instance.  Set this in a `.env` file or your host environment before starting the server.
