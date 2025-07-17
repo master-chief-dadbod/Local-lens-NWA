@@ -6,7 +6,7 @@ services:
   repo: https://github.com/master-chief-dadbod/Local-lens-NWA
   plan: free
   region: oregon
-  buildCommand: yarn
-  startCommand: yarn start
+  buildCommand: npm install
+  startCommand: npm start
   autoDeployTrigger: commit
 version: "1"
