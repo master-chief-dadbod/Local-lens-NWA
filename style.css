@@ -644,6 +644,9 @@ letter-spacing: -0.01em;
         align-items: center;
     }
 
-   .avatar-section,.achievements-section {
+     .avatar-section,.achievements-section {
         max-width: 100%;
+    .avatar-section,.achievements-section {
+         max-width: 100%;
     }
+}
