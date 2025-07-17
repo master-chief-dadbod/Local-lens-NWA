@@ -30,9 +30,9 @@ If automated pushes are unavailable, you can upload these files directly to GitH
 ## Node Deployment
 This project is static, but some hosting platforms like Render expect a package.json to run. The included `server.js` uses Express to serve the files.
 
-1. Run `yarn install` (or `npm install`).
-2. Start with `yarn start` or `npm start`.
-3. On Render, set the build command to `yarn` and the start command to `yarn start`.
+Run `npm install`.
+2. Start with `npm start`.
+3. On Render, set the build command to `npm install` and the start command to `npm start`.
 
 ## Environment Variables
 
