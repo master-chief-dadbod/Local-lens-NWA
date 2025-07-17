@@ -19,3 +19,5 @@ Thumbs.db
 
 # Other temporary files
 *.tmp
+# Environment files
+.env
